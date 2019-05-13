@@ -1,7 +1,7 @@
 #!/bin/bash
 # Copyright 2019 Joakim Saras  GPL 3
 
-echo "Configuration starting for important installations...."
+echo "Configuration starting for important installations..."
 set -o verbose
 
 echo "Installing important packages and programs"
