@@ -8,7 +8,7 @@ echo "Installing important packages and programs"
 sudo apt-get update
 sudo apt-get -y install git salt-minion
 wget /home/xubuntu/Downloads/ https://p-ams2.pcloud.com/cBZ2SG254Z6UT4s4ZeMevZZwV0DA7Z2ZZ3d4ZkZu5laXZJJZ8VZIVZv7Z17ZbXZBkZPZO0Zq5Z50ZrkZ05ZL0ZNyUE7ZLFMcSNuT2UhRmI8qIYOq50Lr6F8X/pcloud
-cd /home/user/Downloads
+cd /home/xubuntu/Downloads
 chmod +x pcloud.run
 ./pcloud.run
 
