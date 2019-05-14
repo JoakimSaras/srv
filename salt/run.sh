@@ -3,8 +3,7 @@
 echo "Configuration starting..."
 setxkbmap fi
 
-echo "Installing Salt-Minion..."
-
+echo "Installing updates and Salt"
 sudo apt-get update
 sudo apt-get -y install salt-minion
 
