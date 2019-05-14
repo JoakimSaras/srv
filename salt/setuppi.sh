@@ -14,7 +14,9 @@ sudo apt-get -y install salt-minion
 
 echo 'master: localhost'|sudo tee /etc/salt/minion 
 
-sudo systemctl restart salt-minion
+echo "Restarting Salt"
+
+sudo systemctl restart salt-minion.service
 
 
 echo "All done. Please wait for more instructions by Master!"
