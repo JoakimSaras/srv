@@ -1,8 +1,13 @@
 #!/bin/bash
 
-echo "Retrieving GitHub repository..."
+echo "Retrieving GitHub repositories..."
 
 git clone https://github.com/JoakimSaras/saras
+git clone https://github.com/andreafabrizi/Dropbox-Uploader.git
+
+cd ~/Dropbox-Uploader
+sudo chmod +x dropbox_uploader.sh
+./dropbox_uploader.sh
 
 echo "Configuring necessary things for GIT.."
 
