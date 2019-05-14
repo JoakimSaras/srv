@@ -2,7 +2,6 @@
 
 echo "Configuration starting..."
 setxkbmap fi
-sudo timedatectl set-timezone Europe/Helsinki
 
 echo "Installing Salt-Minion and DropBox..."
 
