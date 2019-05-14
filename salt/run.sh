@@ -7,7 +7,7 @@ set -o verbose
 echo "Installing Salt and Git..."
 sudo apt-get update
 sudo apt-get upgrade
-sudo apt-get -y install salt-minion
+sudo apt-get -y install git salt-minion
 
 echo "Retrieving and Applying Settings..."
 echo 'master: localhost'|sudo tee /etc/salt/minion
