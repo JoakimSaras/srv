@@ -12,7 +12,7 @@ echo "Install and configure salt"
 
 sudo apt-get -y install salt-minion
 
-echo 'master: localhost'|sudo tee /etc/salt/minion 
+echo 'master: localhost' 'id: koti'|sudo tee /etc/salt/minion 
 
-echo 'id: koti'|sudo tee /etc/salt/minion 
+echo "All done. Please wait for more instructions by Master!"
 
