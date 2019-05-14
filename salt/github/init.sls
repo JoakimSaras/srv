@@ -1,4 +1,4 @@
 install_github:
   pkg.installed:
-    -pkgs:
+    - pkgs:
       - git
