@@ -1,19 +1,18 @@
 #!/bin/bash
 
+
 echo "Configuration starting..."
 set -o verbose
-setxkbmap fi
 
-echo "Installing Salt and Git..."
+echo "Installing Salt and updates..."
 sudo apt-get update
 sudo apt-get upgrade
 sudo apt-get -y install salt-minion
 
-
-echo "Applying Settings..."
+echo "Retrieving and Applying Settings..."
 echo 'master: localhost'|sudo tee /etc/salt/minion
-echo 'id: koti'|sudo tee /etc/salt/minion
+
+echo "Configuring..."
+setxkbmap fi
 
 echo "Done."
-
-
