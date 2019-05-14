@@ -9,4 +9,5 @@ sudo apt-get -y install salt-minion
 
 echo "Applying Settings..."
 echo 'master: localhost'|sudo tee /etc/salt/minion
+
 echo "Done."
