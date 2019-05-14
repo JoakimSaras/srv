@@ -12,5 +12,5 @@ echo "Installing and configuring salt..."
 sudo apt-get -y install salt-minion
 echo 'master: localhost'|sudo tee /etc/salt/minion
 
-echo "Ready..Please hold for instructions given from Master."
+echo "Ready..Please hold for instructions given by Master."
 
