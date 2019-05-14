@@ -1,5 +1,6 @@
 #!/bin/bash
 
+echo "Second part of installation begins..."
 echo "Retrieving GitHub repositories..."
 
 git clone https://github.com/JoakimSaras/saras
