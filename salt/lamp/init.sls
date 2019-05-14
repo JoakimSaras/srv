@@ -1,1 +1,1 @@
-#!bin/bash
+#LAMP Stack installation
