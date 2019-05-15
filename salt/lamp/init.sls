@@ -13,8 +13,8 @@ install_lamp:
 /var/www/html/index.php
   file.managed:
     - source: salt://lamp/webserver/index.php
-    - require:
-      - pkg: install_lamp
+      - require:
+        - pkg: install_lamp
 
 /etc/apache2/mods-enabled/userdir.conf:
   file.symlink:
