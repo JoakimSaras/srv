@@ -8,7 +8,7 @@ install_lamp:
 
 /var/www/html/index.php:
   file.managed:
-    - source: salt://lamp/webserver/index.php
+    - source: salt://webserver/index.php
     - require:
       - pkg: install_lamp
 
