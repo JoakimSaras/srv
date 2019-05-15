@@ -20,7 +20,7 @@ install_lamp:
   file.symlink:
     - target: ../mods-available/userdir.load
     
-apache2:
+apache2service:
   service.running:
     - name: apache2
     - watch:
