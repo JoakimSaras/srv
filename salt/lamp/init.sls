@@ -25,7 +25,6 @@ apache2service:
     - name: apache2
     - watch:
       - file: /etc/apache2/mods-enabled/userdir.conf
-      - file: /etc/apache2/mods-enabled/userdir.load
   
 /tmp/dbfile.sql:
   file.managed:
