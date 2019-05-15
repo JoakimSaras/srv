@@ -11,10 +11,6 @@ install_lamp:
     - source: salt://webserver/index.php
     - require:
       - pkg: install_lamp
-
-/etc/apache2/mods-enabled/userdir.conf:
-  file.symlink:
-    - target: ../mods-available/userdir.load
     
 apache2service:
   service.running:
