@@ -1,8 +1,10 @@
-install_apache2:
+install_lamp:
   pkg.installed: 
-
-libapache2-mod-php:
-  pkg.installed:
+    - pkgs:
+    - apache2
+    - libapache2-mod-php
+    - mariadb-server
+    - mariadb-client
 
 /var/www/html/index.html:
   file.managed:
@@ -18,18 +20,6 @@ apache2:
     - watch:
       - file: /etc/apache2/mods-enabled/userdir.conf
       - file: /etc/apache2/mods-enabled/userdir.load
-      
- /home/Boksi/public_html:
-   file.recurse:
-     - source: salt://lamp/public_html
-     - include_empty: True
-     
-     
-install_mariadb-server:
-  pkg.installed:
-  
-mariadb-client:
-  pkg.installed:
   
 /tmp/dbfile.sql:
   file.managed:
