@@ -25,7 +25,7 @@ apache2:
      - include_empty: True
      
      
- install_mariadb-server:
+install_mariadb-server:
   pkg.installed
   
 mariadb-client:
