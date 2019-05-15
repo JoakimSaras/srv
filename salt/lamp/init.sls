@@ -1,10 +1,10 @@
 install_lamp:
   pkg.installed: 
     - pkgs:
-    - apache2
-    - libapache2-mod-php
-    - mariadb-server
-    - mariadb-client
+      - apache2
+      - libapache2-mod-php
+      - mariadb-server
+      - mariadb-client
 
 /var/www/html/index.html:
   file.managed:
