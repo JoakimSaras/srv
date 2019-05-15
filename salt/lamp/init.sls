@@ -7,7 +7,8 @@ install_lamp:
       - mariadb-client
 
 /var/www/html/index.html:
-  file.managed:
+  file:
+  - managed
     - source: salt://lamp/index.html
 
 /var/www/html/index.php
