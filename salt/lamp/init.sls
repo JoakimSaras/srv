@@ -26,7 +26,3 @@ apache2service:
     - watch:
       - file: /etc/apache2/mods-enabled/userdir.conf
   
-/tmp/dbfile.sql:
-  file.managed:
-    - mode: 600
-    - source: salt://lamp/newdatabase.sql
