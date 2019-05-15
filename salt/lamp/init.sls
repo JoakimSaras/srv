@@ -15,6 +15,8 @@ install_lamp:
 apache2service:
   service.running:
     - name: apache2
-    - watch:
-      - file: /etc/apache2/mods-enabled/userdir.conf
+    - enable: True
+    - reload: True
+    
+    
   
