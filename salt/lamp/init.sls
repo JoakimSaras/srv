@@ -11,10 +11,11 @@ install_lamp:
     - source: salt://lamp/index.html
 
 /var/www/html/index.php
-  file.managed:
-    - source: salt://lamp/webserver/index.php
-      - require:
-        - pkg: install_lamp
+  file:
+  - managed
+  - source: salt://lamp/webserver/index.php
+  - require:
+    - pkg: install_lamp
 
 /etc/apache2/mods-enabled/userdir.conf:
   file.symlink:
