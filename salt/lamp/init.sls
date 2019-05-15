@@ -1,8 +1,8 @@
 install_apache2:
-  pkg.installed 
+  pkg.installed: 
 
 libapache2-mod-php:
-  pkg.installed
+  pkg.installed:
 
 /var/www/html/index.html:
   file.managed:
@@ -26,10 +26,10 @@ apache2:
      
      
 install_mariadb-server:
-  pkg.installed
+  pkg.installed:
   
 mariadb-client:
-  pkg.installed
+  pkg.installed:
   
 /tmp/dbfile.sql:
   file.managed:
